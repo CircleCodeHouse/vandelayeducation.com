@@ -69,3 +69,31 @@
     display: none;
   }
 }
+
+.hero-indicators-bar ol {
+  display: none;
+  margin-bottom: 140%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 80%;
+}
+
+@media screen and (min-width: 990px) {
+  .hero-indicators-mobile {
+    display: none;
+  }
+}
+
+.hero-bar-carousel-indicator {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 990px) {
+  .hide-carousel-controls {
+    display: none;
+  }
+}
