@@ -1,0 +1,54 @@
+.top-row-our-values {
+  margin-top: 120px;
+}
+@media screen and (max-width: 990px) {
+  .top-row-our-values {
+    margin-top: 0px;
+  }
+}
+
+.card-our-values {
+  background-color: #23356e;
+}
+
+.hunger {
+  top: -150px;
+}
+@media screen and (max-width: 990px) {
+  .hunger {
+    top: 0px;
+  }
+}
+
+.our-values-image-one {
+  height: 140px;
+  top: -5px;
+}
+
+@media screen and (max-width: 990px) {
+  .our-values-image-one {
+    height: 300px;
+    top: 0px;
+  }
+}
+
+.ownership {
+  top: -220px;
+}
+@media screen and (max-width: 990px) {
+  .ownership {
+    top: 0px;
+  }
+}
+
+.our-values-image-two {
+  height: 140px;
+  top: -220px;
+}
+
+@media screen and (max-width: 990px) {
+  .our-values-image-two {
+    height: 300px;
+    top: 0px;
+  }
+}
