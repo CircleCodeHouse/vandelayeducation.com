@@ -42,12 +42,10 @@
 
 /* Our Values */
 .top-row-our-values {
-  margin-top: 220px;
+  margin-top: 140px;
 }
 @media screen and (max-width: 990px) {
-  .top-row-our-values {
-    margin-top: 0px;
-  }
+  
 }
 
 .card-our-values {
@@ -57,7 +55,7 @@
 }
 
 .hunger {
-  top: -125px;
+  top: -175px;
 }
 @media screen and (max-width: 990px) {
   .hunger {
@@ -66,8 +64,8 @@
 }
 
 .our-values-image-one {
-  height: 120px;
-  top: -40px;
+  height: 150px;
+  top: -23px;
 }
 
 @media screen and (max-width: 990px) {
@@ -78,7 +76,7 @@
 }
 
 .ownership {
-  top: -130px;
+  top: -230px;
 }
 @media screen and (max-width: 990px) {
   .ownership {
@@ -87,8 +85,8 @@
 }
 
 .our-values-image-two {
-  height: 120px;
-  top: -130px;
+  height: 150px;
+  top: -230px;
 }
 
 @media screen and (max-width: 990px) {
@@ -138,5 +136,39 @@
 @media screen and (min-width: 990px) {
   .hide-carousel-controls {
     display: none;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  legend {
+      font-size: calc(1.275rem + 0.3vw);
+  }
+  h1, .h1 {
+      font-size: calc(1.375rem + 1.5vw);
+  }
+  h2, .h2 {
+      font-size: calc(1.325rem + 0.9vw);
+  }
+  h3, .h3 {
+      font-size: calc(1.3rem + 0.6vw);
+  }
+  h4, .h4 {
+      font-size: calc(1.275rem + 0.3vw);
+  }
+  .display-1 {
+      font-size: calc(1.725rem + 5.7vw);
+  }
+  .display-2 {
+      font-size: calc(1.675rem + 5.1vw);
+  }
+  .display-3 {
+      font-size: calc(1.575rem + 3.9vw);
+  }
+  .display-4 {
+      font-size: calc(1.475rem + 2.7vw);
+  }
+  .close {
+      font-size: calc(1.275rem + 0.3vw);
   }
 }
