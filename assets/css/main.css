@@ -42,7 +42,7 @@
 
 /* Our Values */
 .top-row-our-values {
-  margin-top: 220px;
+  margin-top: 140px;
 }
 @media screen and (max-width: 990px) {
   .top-row-our-values {
@@ -57,7 +57,7 @@
 }
 
 .hunger {
-  top: -125px;
+  top: -175px;
 }
 @media screen and (max-width: 990px) {
   .hunger {
@@ -66,8 +66,8 @@
 }
 
 .our-values-image-one {
-  height: 120px;
-  top: -40px;
+  height: 150px;
+  top: -23px;
 }
 
 @media screen and (max-width: 990px) {
@@ -78,7 +78,7 @@
 }
 
 .ownership {
-  top: -130px;
+  top: -230px;
 }
 @media screen and (max-width: 990px) {
   .ownership {
@@ -87,8 +87,8 @@
 }
 
 .our-values-image-two {
-  height: 120px;
-  top: -130px;
+  height: 150px;
+  top: -230px;
 }
 
 @media screen and (max-width: 990px) {
