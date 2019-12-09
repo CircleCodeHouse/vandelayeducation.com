@@ -175,12 +175,10 @@
   }
 }
 
-.funny-switch:hover {
-  display: none;
+.funny-switch {
+  transition: opacity 2s ease-in-out;
 }
 
-#funny-image {
-  height: 30px;
-  width: 30px;
-  background-color: blue;
+.funny-switch:hover {
+  opacity: 1;
 }
