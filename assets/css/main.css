@@ -177,6 +177,23 @@
 
 /* meet the team page */
 
+.mtt-hero-image {
+  background-image: url('assets/img/product3.jpg');
+  height: 80vh;
+  top: -50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+.slant-box {
+  height: 600px;
+  width: 100%;
+  background-color: #f2f2f2;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
 .funny-switch {
   position: relative;
   text-align: center;
