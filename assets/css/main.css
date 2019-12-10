@@ -188,10 +188,16 @@
   z-index: -1;
 }
 .slant-box {
-  height: 600px;
+  position: relative;
+  height: 700px;
   width: 100%;
+  top: -150px;
   background-color: #f2f2f2;
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
+.slant-box p {
+  color: blue;
 }
 
 .funny-switch {
