@@ -189,15 +189,34 @@
 }
 .slant-box {
   position: relative;
+  text-align: center;
   height: 700px;
   width: 100%;
   top: -150px;
   background-color: #f2f2f2;
+  color: red;
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
 }
 
-.slant-box p {
+.slant-box-text {
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  height: 500px;
+  width: 70%;
+}
+
+.slant-box-text span {
   color: blue;
+  font-weight: 900;
+  font-size: 1em;
+}
+
+.slant-box-text h3 {
+  color: blue;
+  text-align: left;
+  font-weight: 400;
+  font-size: 3em;
 }
 
 .funny-switch {
