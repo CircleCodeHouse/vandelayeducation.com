@@ -176,32 +176,50 @@
 }
 
 /* meet the team page */
+.mtt-text-temp-class h4 {
+  color: black;
+  font-size: 2em;
+}
 
 .mtt-hero-image {
   background-image: url('assets/img/product3.jpg');
   height: 80vh;
-  top: -50px;
+  top: -140px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   z-index: -1;
 }
+
+.mtt-title h2 {
+  text-align: center;
+  color: blue;
+  font-weight: 900;
+  font-size: 5em;
+}
+
 .slant-box {
   position: relative;
   text-align: center;
-  height: 700px;
+  height: 600px;
   width: 100%;
-  top: -150px;
+  top: -200px;
   background-color: #f2f2f2;
-  color: red;
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
+@media screen and (max-width: 1090px) {
+  .slant-box {
+    height: 900px;
+    top: -240px;
+  }
 }
 
 .slant-box-text {
   display: inline-block;
   position: relative;
-  top: 100px;
+  top: 120px;
   height: 500px;
   width: 70%;
 }
@@ -217,6 +235,12 @@
   text-align: left;
   font-weight: 400;
   font-size: 3em;
+}
+
+.slant-box-text p {
+  text-align: left;
+  font-size: 2em;
+  font-weight: 300;
 }
 
 .funny-switch {
