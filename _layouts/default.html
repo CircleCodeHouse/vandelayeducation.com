@@ -1,0 +1,106 @@
+{% for _page in site.pages %}
+  {% if _page.settings %}
+    {% assign settings = _page %}
+  {% endif %}
+{% endfor %}
+<!-- htmllint preset="none" -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    {{ page.head_title | default: settings.head_title | liquify }}
+  </title>
+  <meta name="description" content="{{ page.description | liquify }}">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./assets/css/now-ui-kit.css?v=1.2.0" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+  />
+
+  <!-- htmllint preset="none" -->
+  <style amp-custom>
+    :root {
+      --brand-primary-light: {{ settings.primary_light_color | replace: 'rgb(', '' | replace: ')', '' }};
+      --brand-primary-dark: {{ settings.primary_dark_color | replace: 'rgb(', '' | replace: ')', '' }};
+      --brand-secondary-light: {{ settings.secondary_light_color | replace: 'rgb(', '' | replace: ')', '' }};
+      --brand-secondary-dark: {{ settings.secondary_dark_color | replace: 'rgb(', '' | replace: ')', '' }};
+    }
+    
+
+  </style>
+  
+  <!-- htmllint preset="$previous" -->
+  
+</head>
+
+<body>
+
+  {% include header.html %}
+  <div class="d-flex flex-column justify-content-between min-vh-100">
+    <main class="d-flex flex-column flex-grow-1">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </div>
+
+      <!--   Core JS Files   -->
+      <script
+      src="./assets/js/core/jquery.3.2.1.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./assets/js/core/popper.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./assets/js/core/bootstrap.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="./assets/js/plugins/moment.min.js"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="./assets/js/plugins/bootstrap-switch.js"></script>
+    <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+    <script src="./assets/js/plugins/bootstrap-tagsinput.js"></script>
+    <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+    <script
+      src="./assets/js/plugins/bootstrap-selectpicker.js"
+      type="text/javascript"
+    ></script>
+    <!--  Google Maps Plugin    -->
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
+    <!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+    <script src="./assets/js/plugins/jasny-bootstrap.min.js"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script
+      src="./assets/js/plugins/nouislider.min.js"
+      type="text/javascript"
+    ></script>
+    <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+    <script
+      src="./assets/js/plugins/bootstrap-datetimepicker.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+    <script
+      src="./assets/js/now-ui-kit.js?v=1.2.0"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        // the body of this function is in assets/js/now-ui-kit.js
+        nowuiKit.initSliders();
+      });
+    </script>
+</body>
+
+</html>
