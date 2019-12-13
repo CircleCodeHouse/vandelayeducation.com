@@ -1,11 +1,11 @@
 {% for _page in site.pages %}
-  {% if _page.settings %}
-    {% assign settings = _page %}
-  {% endif %}
+{% if _page.settings %}
+{% assign settings = _page %}
+{% endif %}
 {% endfor %}
 <footer>
-  <div class="container-fluid py-4 footer bg-brand-primary-light">
-    <ul class="nav justify-content-center">
+  <div class="container-fluid py-4 footer bg-brand-primary-light slant-footer">
+    <!-- <ul class="nav justify-content-center mt-5 p-5">
       <li class="nav-item">
         <a class="nav-link active" href="/how-to-apply/">How To Apply</a>
       </li>
@@ -21,11 +21,53 @@
       <li class="nav-item">
         <a class="nav-link" href="/contact/">Contact</a>
       </li>
-    </ul>
-  </div>
-  <div class="text-center bg-brand-primary-dark">
-    <small class="text-muted">
-      Copyright © {{ site.time | date: '%Y' }} {{ settings.footer_text | liquify }}
-    </small>
+    </ul> -->
+
+    <div class="row mt-5">
+      <div class="col-3">
+        <ul>
+          <li>1335 E. Whitestone Blvd, Suite 100</li>
+          <li>Cedar Park, Texas, 78613</li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <ul>
+          <li><a href="tel:512-259-2100">(512)259-2100</a></li>
+          <br>
+          <li><a href="{{ settings.email }}">info@vandelayeducation.com</li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <ul>
+          <li>
+            <button class="btn btn-icon btn-round btn-facebook">
+              <a href="{{ settings.facebook }}">
+                <i class="fa fa-facebook"> </i>
+              </a>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-icon btn-round btn-instagram">
+              <a href="{{ settings.instagram }}">
+                <i class="fa fa-instagram"> </i>
+              </a>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-icon btn-round btn-linkedin">
+              <a href="{{ settings.linkedin }}">
+                <i class="fa fa-linkedin"> </i>
+              </a>
+            </button>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center">
+      <small class="text-muted">
+        Copyright © {{ site.time | date: '%Y' }} {{ settings.footer_text | liquify }}
+      </small>
+    </div>
   </div>
 </footer>
