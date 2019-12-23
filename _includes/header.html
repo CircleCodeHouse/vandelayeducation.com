@@ -1,0 +1,40 @@
+{% for _page in site.pages %}
+  {% if _page.settings %}
+    {% assign settings = _page %}
+  {% endif %}
+{% endfor %}
+
+<nav class="navbar navbar-expand-lg bg-primary fixed-top" color-on-scroll="50">
+  <div class="container-fluid">
+    <div class="navbar-translate">
+      <a class="navbar-brand" href="/">
+          <img src="{{ settings.logo }}" alt="Vandelay Education" width="550px" height="auto">
+      </a>
+      <button class="navbar-toggler text-end" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navigation-index" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-bar bar1"></span>
+        <span class="navbar-toggler-bar bar2"></span>
+        <span class="navbar-toggler-bar bar3"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse d-block col py-0" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mt-1">
+          <a class="nav-link py-0" href="/">
+            <h2 class="m-0">Partner With Us</h2>
+          </a>
+        </li>
+        <li class="nav-item mt-1">
+          <a class="nav-link py-0 ml-2" href="/meet-our-team">
+            <h2 class="m-0">Meet Our Team</h2>
+          </a>
+        </li>
+        <li class="nav-item mt-1">
+          <a class="nav-link py-0 ml-2" href="/careers">
+            <h2 class="m-0">Careers</h2>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

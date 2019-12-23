@@ -1,0 +1,45 @@
+---
+layout: default
+permalink: "/careers"
+title: Careers
+head_title: 'Careers'
+description: ''
+---
+
+{% for _page in site.pages %}
+  {% if _page.settings %}
+    {% assign settings = _page %}
+  {% endif %}
+{% endfor %}
+
+<div class="container-fluid bg-primary text-white pb-5">
+    <div class="row justify-content-center">
+        <div class="col-9 m-5 py-3">
+            <h2 class="card-title text-center font-weight-bold">MAKE AN IMPACT WITH US</h2>
+            <p class="text-center">Between medical and dental assistant instructing, admissions representing and corporate carees, Vandelay is:</p>
+        </div>
+    </div>
+    <div class="pl-5 pr-5 row justify-content-center pb-5">
+        <div class=" col-md-3 pt-2 pb-2" >
+            <div class="text-center">
+                <img src="/assets/img/Goat_Icon_White.png" class="w-75 rounded-circle img-fluid" alt="Our Values Goat Logo">
+            </div>
+            <h3 class="text-center font-weight-bold pt-3 pd-3">We're Perky</h3>
+            <p class="text-center">Full-time employees enjoy: Unlimited PTO, flexable scheduling and and office full of doggos.</p>
+        </div>
+        <div class=" col-md-3  pt-2 pb-2 ml-3 mr-3" >
+            <div class="text-center">
+                <img src="/assets/img/Montain_Climbing_Icon_White.png" class="w-75 rounded-circle img-fluid" alt="Our Values Heart Logo">
+            </div>
+            <h3 class=" text-center font-weight-bold pt-3 pd-3">We're Remote</h3>
+            <p class="text-center">Our dedicated teaching staff enjoys part-time, flexible hours across the country.</p>
+        </div>
+        <div class="col-md-3  pt-2 pb-2" >
+            <div class="text-center">
+                <img src="/assets/img/Rocket_Icon_White.png" class="w-75 rounded-circle img-fluid" alt="Our Values Rocket Logo">
+            </div>  
+            <h3 class=" text-center font-weight-bold pt-3 pd-3">Placeholder</h3>
+            <p class=" text-center">Lorem ipsum dolo sit amet, consecutor aplidicifia, sed do eisus mod tempor inccidendut</p>
+        </div>
+    </div>
+</div>
