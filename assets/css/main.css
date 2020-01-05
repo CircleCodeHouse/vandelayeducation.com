@@ -220,12 +220,13 @@ p, span {
 }
 
 .slant-footer {
+  margin-top: 150px;
   position: relative;
   text-align: center;
   height: 10%;
   width: 100%;
   background-color: #e2e2e2;
-  clip-path: polygon(0 21%, 100% 36%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 28%, 100% 56%, 100% 100%, 0% 100%);
 }
 
 
@@ -323,5 +324,8 @@ p, span {
 @media (max-width: 768px){
   .slant-footer {
     clip-path: none;
+  }
+  .border-right{
+    border: rgba(46, 65, 150, 0.699);
   }
 }
