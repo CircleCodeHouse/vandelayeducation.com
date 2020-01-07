@@ -519,7 +519,6 @@ p, span {
 }
 
 .mtt-hero-image {
-  background-image: url('assets/img/product3.jpg');
   height: 80vh;
   top: -140px;
   background-position: center;
@@ -527,6 +526,7 @@ p, span {
   background-size: cover;
   position: relative;
   z-index: -1;
+  
 }
 
 .mtt-title h2 {
