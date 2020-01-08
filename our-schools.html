@@ -1,0 +1,39 @@
+---
+layout: default
+permalink: '/our-schools/'
+title: Our Schools
+head_title: 'Our Schools'
+description: ''
+---
+
+{% for _page in site.pages %}
+  {% if _page.settings %}
+    {% assign settings = _page %}
+  {% endif %}
+{% endfor %}
+
+<section>
+
+    <div class="bg-primary container-fluid p-5" style="height: 70vh">
+
+
+      <div class="row mt-5 justify-content-center">
+          <div class="col-sm-12 col-md-8 col-xl-6">
+            <div class="bg-white" style="width: auto; height: 40vh;">
+              <div class="row justify-content-center">
+                <div class="col-5"><button type="button" class="btn btn-secondary btn-lg btn-block rounded-0">Dental</button></div>
+                <div class="col-5"><button type="button" class="btn btn-secondary btn-lg btn-block rounded-0">Medical</button></div>
+              </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+  
+
+
