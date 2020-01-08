@@ -229,6 +229,43 @@ p, span {
   clip-path: polygon(0 28%, 100% 56%, 100% 100%, 0% 100%);
 }
 
+.slant-footer {
+  margin-top: 150px;
+  position: relative;
+  text-align: center;
+  height: 10%;
+  width: 100%;
+  background-color: #e2e2e2;
+  clip-path: polygon(0 28%, 100% 56%, 100% 100%, 0% 100%);
+}
+
+.slant-careers {
+  clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-top: -150px;
+  margin-bottom: -150px;
+}
+
+div .big-bot-grils {
+  padding-bottom: 200px;
+}
+
+.tall-rectagle {
+  height: 190px;
+  width: 175px;
+}
+
+.big-square {
+  height: 210px;
+  width: 210px;
+}
+.smol-square {
+  height: 87px;
+  width: 87px;
+}
+
+
 
 @media screen and (max-width: 1090px) {
   .slant-box {
@@ -325,6 +362,12 @@ p, span {
   .slant-footer {
     clip-path: none;
   }
+
+  .slant-careers {
+    clip-path: none;
+
+  }
+  
   .border-right{
     border: rgba(46, 65, 150, 0.699);
   }
