@@ -347,5 +347,8 @@ p, span {
   clip-path: polygon(0 0, 100% 21%, 100% 100%, 0 79%);
 }
 
+.fifty-bg-dark {
+  background-color: #e2e2e2;
+}
 
 
