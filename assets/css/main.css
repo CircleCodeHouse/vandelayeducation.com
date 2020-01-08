@@ -192,14 +192,15 @@ p, span {
 }
 
 .mtt-hero-image {
-  height: 80vh;
-  top: -140px;
+  height: 45rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  z-index: -1;
-  
+  background-image: linear-gradient(
+    rgba(75, 75, 75, 0.2),
+    rgba(45, 45, 45, 0.5)
+  ), url('/assets/img/Vandelay1119_Main.jpg');
 }
 
 .mtt-title h2 {
@@ -220,7 +221,7 @@ p, span {
 }
 
 .slant-footer {
-  margin-top: 150px;
+  margin-top: 100px;
   position: relative;
   text-align: center;
   height: 10%;
@@ -228,6 +229,38 @@ p, span {
   background-color: #e2e2e2;
   clip-path: polygon(0 28%, 100% 56%, 100% 100%, 0% 100%);
 }
+
+.footer-content{
+  display: flex;
+  justify-content: baseline;
+}
+
+.slant-careers {
+  clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-top: -150px;
+  margin-bottom: -150px;
+}
+
+div .big-bot-grils {
+  padding-bottom: 200px;
+}
+
+.tall-rectagle {
+  height: 190px;
+  width: 175px;
+}
+
+.big-square {
+  height: 210px;
+  width: 210px;
+}
+.smol-square {
+  height: 87px;
+  width: 87px;
+}
+
 
 
 @media screen and (max-width: 1090px) {
@@ -322,10 +355,30 @@ p, span {
 }
 
 @media (max-width: 768px){
-  .slant-footer {
+  .slant-footer, .slant-careers {
     clip-path: none;
   }
   .border-right{
     border: rgba(46, 65, 150, 0.699);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mtt-hero-image {
+    top: auto;
+  }
+
+  .big-margin {
+    margin-top: 300px;
+  }
+
+  .slant-box {
+    position: relative;
+    text-align: center;
+    height: 600px;
+    width: 100%;
+    top: -320px;
+    background-color: #f2f2f2;
+    clip-path: polygon(0 100%, 100% , 100% 90%, 0 100%);
   }
 }
