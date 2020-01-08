@@ -202,6 +202,8 @@ p, span {
   
 }
 
+
+
 .mtt-title h2 {
   text-align: center;
   color: blue;
@@ -264,15 +266,35 @@ div .big-bot-grils {
   height: 87px;
   width: 87px;
 }
-
-
-
 @media screen and (max-width: 1090px) {
   .slant-box {
     height: 900px;
     top: -240px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .mtt-hero-image {
+    top: auto;
+  }
+
+  .big-margin {
+    margin-top: 300px;;
+  }
+
+  .slant-box {
+    position: relative;
+    text-align: center;
+    height: 600px;
+    width: 100%;
+    top: -320px;
+    background-color: #f2f2f2;
+    clip-path: polygon(0 100%, 100% , 100% 90%, 0 100%);
+  }
+}
+
+
+
 
 
 .slant-box-text {
