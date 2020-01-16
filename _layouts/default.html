@@ -5,7 +5,7 @@
 {% endfor %}
 <!-- htmllint preset="none" -->
 <!DOCTYPE html>
-<html>
+<html {% if site.baseurl == '/amp' %}amp{% endif %} >
 
 <head>
   <meta charset="UTF-8">
@@ -36,8 +36,14 @@
     
 
   </style>
-  
+
+  {% include amp.html %}
   <!-- htmllint preset="$previous" -->
+  {% if site.baseurl == '/amp' %}
+  <link rel="canonical" href="{{ settings.url }}{{ page.url }}">
+  {% else %}
+    <link rel="amphtml" href="{{ settings.url }}/amp{{ page.url }}">
+  {% endif %}
   
 </head>
 
@@ -101,4 +107,4 @@
     </script>
 </body>
 
-</html>
+</html{% if site.baseurl == '/amp' %}amp{% endif %}>
