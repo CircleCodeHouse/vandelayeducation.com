@@ -221,7 +221,7 @@ p, span {
 }
 
 .slant-footer {
-  margin-top: 100px;
+  margin-top: -50px;
   position: relative;
   text-align: center;
   height: 10%;
@@ -381,4 +381,27 @@ div .big-bot-grils {
     background-color: #f2f2f2;
     clip-path: polygon(0 100%, 100% , 100% 90%, 0 100%);
   }
+}
+.fifty-bg-dark {
+  background-color: #e2e2e2;
+}
+
+.slant-spacer {
+  position: relative;
+  top: -5vh;
+  text-align: center;
+  height: 20vh;
+  width: 100%;
+  background-color: #e2e2e2;
+  clip-path: polygon(0 21%, 100% 0%, 100% 79%, 0% 100%);
+}
+
+.slant-how-it-works {
+  position: relative;
+  top: -5vh;
+  text-align: center;
+  height: 40vh;
+  width: 100%;
+  background-color: rgba(var(--brand-primary-dark), 1);
+  clip-path: polygon(0 0, 100% 21%, 100% 100%, 0 79%);
 }
