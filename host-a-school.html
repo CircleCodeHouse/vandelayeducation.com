@@ -4,6 +4,8 @@ permalink: '/host-a-school'
 title: Host a School
 head_title: 'Host a School'
 description: ''
+amp_components: 
+- amp-accordion
 ---
 
 {% for _page in site.pages %} {% if _page.settings %} {% assign settings = _page
@@ -23,8 +25,19 @@ description: ''
             </div>
           </div>
 
-          <div class="row justify-content-center">
-            <div class="col-12 p-0 text-center">
+          <amp-accordion class="sample">
+            <section expanded>
+              <h4>Section 1</h4>
+              <p>Bunch of awesome content.</p>
+            </section>
+            <section>
+              <h4>Section 2</h4>
+              <div>Bunch of even more awesome content. This time in a <code>
+                  <div>
+                </code>.</div>
+            </section>
+            <section>
+              <h4>Section 3</h4>
               <iframe
                 class="col"
                 height="500vh"
@@ -33,8 +46,10 @@ description: ''
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
-            </div>
-          </div>
+            </section>
+          </amp-accordion>
+
+
         </div>
       </div>
     </div>
