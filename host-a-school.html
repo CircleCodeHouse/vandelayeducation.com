@@ -6,6 +6,10 @@ head_title: 'Host a School'
 description: ''
 amp_components: 
 - amp-accordion
+- amp-bind
+- amp-list
+- amp-mustach
+- amp-iframe
 ---
 
 {% for _page in site.pages %} {% if _page.settings %} {% assign settings = _page
@@ -16,38 +20,131 @@ amp_components:
     <div class="row mt-5 justify-content-center">
       <div class="col-sm-12 col-md-8 col-xl-6 p-0 border border-white">
         <div class="bg-white">
-          <div class="row justify-content-center">
-            <div class="col-6 text-center align-self-center">
-              <h3 class="text-primary">Dental</h3>
-            </div>
-            <div class="col-6 text-center bg-primary">
-              <h3 class="text-white">Medical</h3>
-            </div>
-          </div>
 
-          <amp-accordion class="sample">
-            <section expanded>
-              <h4>Section 1</h4>
-              <p>Bunch of awesome content.</p>
-            </section>
-            <section>
-              <h4>Section 2</h4>
-              <div>Bunch of even more awesome content. This time in a <code>
-                  <div>
-                </code>.</div>
-            </section>
-            <section>
-              <h4>Section 3</h4>
-              <iframe
-                class="col"
-                height="500vh"
-                src="https://www.youtube.com/embed/VugSPLUVRPU"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </section>
-          </amp-accordion>
+          <style amp-custom>
+           
+             #goTabs {
+               width: 100%;
+             height: 38px;
+             box-sizing: border-box;
+             font-size: 22px;
+             line-height: 26px;
+               margin: 0px;    
+               color: #fff;
+             }
+             
+           
+             #goTabs button{
+
+              width: 49%;
+             padding: 5px 15px;
+             border: 0;
+             color:#fff;
+             font-size: 18px;
+             line-height: 26px;
+               margin:0;
+                cursor: pointer;
+             }
+           
+             #goTabs button.active, #goTabs button:hover {
+             background-color: rgb(35,53,110);
+             }
+           
+             #goTabs button.inactive {
+               background-color: #fff;
+               color: rgb(35,53,110);
+
+             }
+           
+             #dental{
+               width:100%;
+               height:470px;
+             box-sizing:border-box;
+           
+             }
+             #dental iframe {
+                 min-height: 470px;
+                 position: relative;
+               
+               }
+
+             #medical {
+               width: 100%;
+               height: 470px;
+             box-sizing:border-box;
+             }
+               #medical iframe {
+                 min-height: 470px;
+                 position: relative;
+               
+               }
+             
+             .show {
+               display: block;
+             }
+           
+             .hide {
+               display: none;
+             }
+
+           
+           @media screen and (max-width: 639px) {
+               h1{
+               height: 120px;
+             }
+           }
+           
+           
+           @media screen and (min-width: 640px) {
+              h1{
+               height: 150px;
+             }
+           
+           }
+           
+           </style>
+
+
+<!-- The following script is used to navigate the tabs Menu, Location and Hours. It sets the class names used for the tabs and the tabbed content.  -->
+<amp-state id="theTabs">
+  <script type="application/json">
+    {
+      "dental": {
+        "dentalTab": "active",
+        "medicalTab": "inactive",
+    "dental": "contentbox show",
+        "medical": "contentbox hide"
+      },
+      "medical": {
+        "dentalTab": "inactive",
+        "medicalTab": "active",
+    "dental": "contentbox hide",
+        "medical": "contentbox show"
+      }
+    }
+  </script>
+</amp-state>
+
+<!-- These are the tabs the user clicks to view content in the different tabs. This features uses AMP-bind -->
+<div id="goTabs">
+  <button id="goDental" on="tap:AMP.setState({ currentTab: 'dental' })" class="active" [class]="theTabs[currentTab].dentalTab"> Dental </button>
+  <button id="goMedical" on="tap:AMP.setState({ currentTab: 'medical' })" class="inactive" [class]="theTabs[currentTab].medicalTab"> Medical </button>
+</div>
+
+<!-- The tabbed content (two DIV elements, each with a unique id (dental, location)) starts here -->
+<div id="dental"  class="contentbox show" [class]="theTabs[currentTab].dental">
+  <amp-iframe sandbox="allow-scripts allow-same-origin" layout="responsive" frameborder="0" src="https://www.youtube.com/embed/VugSPLUVRPU" width="520" height="500" allowfullscreen><amp-img src="https://static.wixstatic.com/media/d053d3_70fa1c452b474205b211644150340695~mv2.png/v1/fill/w_1534,h_164,al_c,q_85,usm_0.66_1.00_0.01/d053d3_70fa1c452b474205b211644150340695~mv2.webp" width="500" height="200" placeholder></amp-img></amp-iframe>
+  </div>
+
+  <div id="medical" class="contentbox hide" [class]="theTabs[currentTab].medical">
+  <!-- The placeholder image is required in order to put the iframe this close to the top of the page -->
+    <amp-iframe sandbox="allow-scripts allow-same-origin" layout="responsive" frameborder="0" src="https://www.youtube.com/embed/VugSPLUVRPU" width="496" height="500" allowfullscreen><amp-img src="https://static.wixstatic.com/media/d053d3_70fa1c452b474205b211644150340695~mv2.png/v1/fill/w_1534,h_164,al_c,q_85,usm_0.66_1.00_0.01/d053d3_70fa1c452b474205b211644150340695~mv2.webp" width="500" height="200" placeholder></amp-img></amp-iframe>
+  </div>
+</div> 
+
+
+
+
 
 
         </div>
