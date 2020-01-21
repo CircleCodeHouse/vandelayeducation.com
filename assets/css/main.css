@@ -245,6 +245,12 @@ p, span {
   margin-bottom: -150px;
 }
 
+.slant-campuses{
+  clip-path: polygon(0 28%, 100% 0, 100% 72%, 0% 100%);
+  background-color: #e2e2e2;
+  margin-top: -70px
+}
+
 div .big-bot-grils {
   padding-bottom: 200px;
 }
@@ -281,6 +287,10 @@ div .big-bot-grils {
 .smol-square {
   height: 87px;
   width: 87px;
+}
+
+.small-shadow{
+  box-shadow: inset -3px 0px 8px -1px rgba(29, 29, 29, 0.1);
 }
 @media screen and (max-width: 1090px) {
   .slant-box {
@@ -395,6 +405,19 @@ div .big-bot-grils {
 .text-primary {
   color: rgba(var(--brand-primary-dark), 1) !important;
 }
+
+.min-height-hack{
+  min-height: 100px;
+}
+
+.card-height{
+  height: calc(50vw - 7.5px);
+}
+
+.bg-brand-primary-light{
+background-color: #e2e2e2;
+}
+
 
 @media (max-width: 768px){
   .slant-footer, .slant-careers {
