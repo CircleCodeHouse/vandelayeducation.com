@@ -289,8 +289,12 @@ div .big-bot-grils {
   width: 87px;
 }
 
+div .card-height a{
+  width: fit-content;
+}
+
 .small-shadow{
-  box-shadow: inset -3px 0px 8px -1px rgba(29, 29, 29, 0.1);
+  box-shadow: inset -3px 0px 8px -1px rgba(29, 29, 29, 0.3);
 }
 @media screen and (max-width: 1090px) {
   .slant-box {
@@ -411,7 +415,11 @@ div .big-bot-grils {
 }
 
 .card-height{
-  height: calc(50vw - 7.5px);
+  min-height: calc(50vw - 7.5px);
+}
+
+.max-height{
+  min-height: calc(100% - 81px) ;
 }
 
 .bg-brand-primary-light{
