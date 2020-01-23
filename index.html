@@ -7,265 +7,276 @@ description: ''
 ---
 
 {% for _page in site.pages %}
-  {% if _page.settings %}
-    {% assign settings = _page %}
-  {% endif %}
+{% if _page.settings %}
+{% assign settings = _page %}
+{% endif %}
 {% endfor %}
 
 
-    <div class="header-3">
-      <div id="carouselExampleIndicators" class="carousel slide" data-interval="3000" data-pause="false">
-        <div class="hero-overlay">
-          <div class="row w-100 justify-content-end">
-            <ol
-              class="col-2 carousel-indicators hero-indicators-bar d-flex position-relative flex-column mt-5 ml-5 mr-0"
-            >
-            </ol>
-            <div class="col-12 mt-5 py-5">
-              <ul
-                class="mt-5 py-5 list-unstyled postiion-absolute align-bottom text-white text-center"
-              >
-                <li class="title mt-5">Certified Courses For Every Industry</li>
-                <li>
-                  <div class="text-center">
-                    <img
-                      src="assets/img/metal-badge.png"
-                      class="w-50 h-50 img-fluid"
-                    />
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-<div class="carousel-inner w-100" role="listbox">
-  <div class="carousel-item">
-    <div class="">
-      <div class="">
-        <img src="/assets/img/009.jpg" alt="Medical Students" class="w-100">
-      </div>
-    </div>
-  </div>
-  <div class="carousel-item">
-    <div class="">
-        <div class="">
-            <img src="/assets/img/Q2LsrNzA.jpeg" alt="Dental Students">
-          </div>
-    </div>
-  </div>
-  <div class="carousel-item active">
-    <div class="">
-        <div class="">
-            <img src="/assets/img/PersonMain_Edit.jpg" alt="Vandelay School Ops">
-          </div>
+<amp-carousel width="2100" height="1400" layout="responsive" type="slides" autoplay loop delay="3000">
+  <amp-img src="/assets/img/009.jpg" width="2100" height="1400"></amp-img>
+  <amp-img src="/assets/img/Q2LsrNzA.jpeg" width="2100" height="1400"></amp-img>
+  <amp-img src="/assets/img/PersonMain_Edit.jpg" width="2100" height="1400"></amp-img>
+</amp-carousel>
+
+<!-- Our Mission -->
+<div class="container-fluid pt-4 pb-5 mt-5 mb-5">
+  <div class="row justify-content-md-center py-5">
+    <div class="col-md-6">
+      <h2 class="text-center text-primary display-4 font-weight-bold">
+        Our Mission
+      </h2>
+      <p class="lead text-primary text-center">
+        Our mission is to lead the change in the for-profit certificate
+        market so that the majority of certificate students will begin their
+        career with zero federal financial aid and minimal debt.
+      </p>
     </div>
   </div>
 </div>
+
+<!-- What We Do -->
+<div class="container-fluid bg-primary py-5">
+  <div class="row justify-content-center my-2">
+    <div class="bg-transparent py-5">
+      <h2 class="text-center text-white display-4 font-weight-bold mb-1">
+        What We Do
+      </h2>
+      <p class="col-7 lead text-center mx-auto text-white mb-4">
+        By partnering with practicing offices, we set up and run career
+        schools with a hands-on and innovative approach to save student loan
+        debt.
+      </p>
+    </div>
+  </div>
+
+  <div class="justify-content-center row mb-5">
+    <div class="col-sm-7 col-md-auto">
+      <div class="card-body  border-white">
+        <h2 class="card-title text-center font-weight-bold text-white mb-4">
+          100 +
+        </h2>
+        <p class="card-title text-center text-white">
+          Partnering Offices
+        </p>
       </div>
     </div>
 
-    <!-- Our Mission -->
-    <div class="container-fluid pt-4 pb-5 mt-5 mb-5">
-      <div class="row justify-content-md-center py-5">
-        <div class="col-md-6">
-          <h2 class="text-center text-primary display-4 font-weight-bold">
-            Our Mission
+    <div class="col-sm-0 col-md-auto justify-content-center d-none d-md-block">
+      <div style="width: 0px" class="align-content-center h-100 border border-white d-none d-md-block">
+
+      </div>
+    </div>
+
+    <div class="col-sm-7 col-md-auto">
+      <div class="card-body border-white">
+        <h2 class="card-title text-center font-weight-bold text-white mb-4">
+          $300M +
+        </h2>
+        <p class="card-title text-center text-white">
+          Student Debt Saved
+        </p>
+      </div>
+    </div>
+
+    <div class="col-sm-0 col-md-auto d-none d-md-block justify-content-center">
+      <div style="width: 0px" class="align-content-center h-100 border border-white d-none d-md-block">
+
+      </div>
+    </div>
+
+    <div class="col-sm-7 col-md-auto">
+      <div class="card-body">
+        <h2 class="card-title text-center font-weight-bold text-white mb-4">
+          11K +
+        </h2>
+        <p class="card-title text-center text-white">Students Enrolled</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Our Values -->
+
+  <div class="container my-5">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <h2 class="text-primary display-4 font-weight-bold">
+            Our Values
           </h2>
-          <p class="lead text-primary text-center">
-            Our mission is to lead the change in the for-profit certificate
-            market so that the majority of certificate students will begin their
-            career with zero federal financial aid and minimal debt.
+          <p class="lead text-primary">
+            At Vandelay Education, we embody our core values daily and love
+            giving back to our communities.
           </p>
         </div>
       </div>
+      </div>
+
+
+      <!-- Top Row -->
+      <!-- <div class="container">
+        <div class="row top-row-our-values">
+          <div class="col-md-10 col-lg-3">
+            <div class="card card-raised card-our-values bg-primary" data-background-color>
+              <div class="info">
+                <div class="icon icon-white">
+                  <i class="now-ui-icons shopping_delivery-fast"></i>
+                </div>
+                <div>
+                  <h4>Create Wow</h4>
+                  <p>Passion for delivering exceptional service.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 col-lg-4">
+            <div class="card card-raised card-our-values hunger bg-primary" data-background-color>
+              <div class="info">
+                <div class="icon icon-white">
+                  <i class="now-ui-icons business_badge"></i>
+                </div>
+                <div>
+                  <h4>Hunger for Growth</h4>
+                  <p>
+                    Mediocrity is not an option! We constantly improve
+                    individually and as a team.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-10 col-lg-2">
+            <div class="card card-raised our-values-image-one" data-background-color
+              style="background-image: url('https://via.placeholder.com/150')">
+              <div class="info"></div>
+            </div>
+          </div>
+
+          <div class="col-md-10 col-lg-3">
+            <div class="card card-raised card-our-values bg-primary" data-background-color>
+              <div class="info">
+                <div class="icon">
+                  <i class="now-ui-icons ui-2_favourite-28"></i>
+                </div>
+                <div>
+                  <h4 class="info-title">Practice Humility</h4>
+                  <p>We accept responsibility and share recognition.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Bottom Row -->
+        <!-- <div class="row">
+          <div class="col-md-10 col-lg-3"></div>
+
+          <div class="col-md-10 col-lg-2">
+            <div class="card card-raised our-values-image-two" data-background-color
+              style="background-image: url('https://via.placeholder.com/150')">
+              <div class="info"></div>
+            </div>
+          </div>
+
+          <div class="col-md-10 col-lg-4">
+            <div class="card card-raised card-our-values ownership bg-primary" data-background-color>
+              <div class="info">
+                <div class="icon icon-white">
+                  <i class="now-ui-icons business_badge"></i>
+                </div>
+                <div>
+                  <h4>Ownership Mentality</h4>
+                  <p>
+                    We own our responsibilities and outcomes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-10 col-lg-3"></div>
+        </div>
+      </div>
     </div>
+  </div>
+</section> -->
 
-    <!-- What We Do -->
-    <div class="container-fluid bg-primary py-5">
-      <div class="row justify-content-center my-2">
-        <div class="bg-transparent py-5">
-          <h2 class="text-center text-white display-4 font-weight-bold mb-1">
-            What We Do
-          </h2>
-          <p class="col-7 lead text-center mx-auto text-white mb-4">
-            By partnering with practicing offices, we set up and run career
-            schools with a hands-on and innovative approach to save student loan
-            debt.
-          </p>
-        </div>
+<!-- Stable section -->
+
+<div class="container-fluid mt-5">
+  <div class="row justify-content-center mt-3">
+    <div sm={12} md="auto" class=" m-2 p-0 align-self-center">
+      <div class="tall-rectangle bg-primary card rounded">
+        <div class="text-center mt-4">
+          <amp-img alt="Goat Icon" src="/assets/img/goat.png" width="60" height="80">
+        </amp-img>
       </div>
-
-      <div class="justify-content-center row mb-5">
-        <div class="col-sm-7 col-md-auto">
-          <div class="card-body  border-white">
-            <h2 class="card-title text-center font-weight-bold text-white mb-4">
-              100 +
-            </h2>
-            <p class="card-title text-center text-white">
-              Partnering Offices
-            </p>
-          </div>
-        </div>
-        
-      <div class="col-sm-0 col-md-auto justify-content-center d-none d-md-block">
-        <div style="width: 0px" class="align-content-center h-100 border border-white d-none d-md-block">
-
-        </div>
-      </div>
-
-        <div class="col-sm-7 col-md-auto">
-          <div class="card-body border-white">
-            <h2 class="card-title text-center font-weight-bold text-white mb-4">
-              $300M +
-            </h2>
-            <p class="card-title text-center text-white">
-              Student Debt Saved
-            </p>
-          </div>
-        </div>
-
-        <div class="col-sm-0 col-md-auto d-none d-md-block justify-content-center">
-          <div style="width: 0px" class="align-content-center h-100 border border-white d-none d-md-block">
-  
-          </div>
-        </div>
-
-        <div class="col-sm-7 col-md-auto">
-          <div class="card-body">
-            <h2 class="card-title text-center font-weight-bold text-white mb-4">
-              11K +
-            </h2>
-            <p class="card-title text-center text-white">Students Enrolled</h2>
-          </div>
+        <div class="text-white text-center">
+          <h4>Create Wow</h4>
+          <p>Passion for delivering exceptional service.</p>
         </div>
       </div>
     </div>
-
-
-    <!-- Our Values -->
-
-    <section class="pb-0 mb-0">
-      <div class="features-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 ml-auto mr-auto text-center">
-              <h2 class="text-primary display-4 font-weight-bold">
-                Our Values
-              </h2>
-              <p class="lead text-primary">
-                At Vandelay Education, we embody our core values daily and love
-                giving back to our communities.
+    <div sm={0} md="auto" class="mx-0 p-0">
+      <div class="row justify-content-center mx-0 px-0">
+        <div sm={6} md="auto" class="m-2 px-0">
+          <div class="big-square bg-primary card rounded mb-0">
+            <div class="text-center mt-5">
+              <amp-img alt="Goat Icon" src="/assets/img/rocket.png" width="75" height="75">
+            </amp-img>
+          </div>
+            <div class="text-white text-center">
+              <h4>Hunger for Growth</h4>
+              <p>
+                Mediocrity is not an option! We constantly improve
+                individually and as a team.
               </p>
             </div>
           </div>
+        </div>
+        <div sm={12} md="auto" class="m-0 m-md-2 px-0 align-self-end">
+          <div class="smol-square bg-secondary card rounded d-none d-md-block mb-0">
 
-          <!-- Top Row -->
-          <div class="container">
-            <div class="row top-row-our-values">
-              <div class="col-md-10 col-lg-3">
-                <div
-                  class="card card-raised card-our-values bg-primary"
-                  data-background-color
-                >
-                  <div class="info">
-                    <div class="icon icon-white">
-                      <i class="now-ui-icons shopping_delivery-fast"></i>
-                    </div>
-                    <div>
-                      <h4>Create Wow</h4>
-                      <p>Passion for delivering exceptional service.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-10 col-lg-4">
-                <div
-                  class="card card-raised card-our-values hunger bg-primary"
-                  data-background-color
-                >
-                  <div class="info">
-                    <div class="icon icon-white">
-                      <i class="now-ui-icons business_badge"></i>
-                    </div>
-                    <div>
-                      <h4>Hunger for Growth</h4>
-                      <p>
-                        Mediocrity is not an option! We constantly improve
-                        individually and as a team.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mx-0 px-0 ">
+        <div sm={12} md="auto" class="m-0 m-md-2 px-0">
+          <div class="smol-square bg-secondary card rounded d-none d-md-block">
 
-              <div class="col-md-10 col-lg-2">
-                <div
-                  class="card card-raised our-values-image-one"
-                  data-background-color
-                  style="background-image: url('https://via.placeholder.com/150')"
-                >
-                  <div class="info"></div>
-                </div>
-              </div>
-
-              <div class="col-md-10 col-lg-3">
-                <div
-                  class="card card-raised card-our-values bg-primary"
-                  data-background-color
-                >
-                  <div class="info">
-                    <div class="icon">
-                      <i class="now-ui-icons ui-2_favourite-28"></i>
-                    </div>
-                    <div>
-                      <h4 class="info-title">Practice Humility</h4>
-                      <p>We accept responsibility and share recognition.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Bottom Row -->
-            <div class="row">
-              <div class="col-md-10 col-lg-3"></div>
-
-              <div class="col-md-10 col-lg-2">
-                <div
-                  class="card card-raised our-values-image-two"
-                  data-background-color
-                  style="background-image: url('https://via.placeholder.com/150')"
-                >
-                  <div class="info"></div>
-                </div>
-              </div>
-
-              <div class="col-md-10 col-lg-4">
-                <div
-                  class="card card-raised card-our-values ownership bg-primary"
-                  data-background-color
-                >
-                  <div class="info">
-                    <div class="icon icon-white">
-                      <i class="now-ui-icons business_badge"></i>
-                    </div>
-                    <div>
-                      <h4>Ownership Mentality</h4>
-                      <p>
-                        We own our responsibilities and outcomes.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              
-              <div class="col-md-10 col-lg-3"></div>
+          </div>
+        </div>
+        <div sm={12} md="auto" class="m-2 px-0">
+          <div class="big-square bg-primary card rounded">
+            <div class="text-center mt-5">
+              <amp-img alt="Goat Icon" src="/assets/img/mountain.png" width="90" height="70">
+            </amp-img>
+          </div>
+            <div class="text-white text-center">
+              <h4>Ownership Mentality</h4>
+              <p>
+                We own our responsibilities and outcomes.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- End Our Values -->
-
+    </div>
+    <div sm={12} md="auto" class="m-2 p-0 align-self-center">
+      <div class="tall-rectangle bg-primary card rounded">
+        <div class="text-center mt-4">
+          <amp-img alt="Goat Icon" src="/assets/img/hearthands.png" width="75" height="75">
+        </amp-img>
+      </div>
+        <div class="text-white text-center">
+          <h4 class="info-title">Practice Humility</h4>
+          <p>We accept responsibility and share recognition.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Our Values -->

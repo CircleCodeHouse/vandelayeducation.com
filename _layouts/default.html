@@ -33,7 +33,7 @@
       --brand-secondary-light: {{ settings.secondary_light_color | replace: 'rgb(', '' | replace: ')', '' }};
       --brand-secondary-dark: {{ settings.secondary_dark_color | replace: 'rgb(', '' | replace: ')', '' }};
     }
-    
+    .amp-carousel-button { display: none }
 
   </style>
 
@@ -51,9 +51,7 @@
 
   {% include header.html %}
   <div class="d-flex flex-column justify-content-between min-vh-100">
-    <main class="d-flex flex-column">
       {{ content }}
-    </main>
     {% include footer.html %}
   </div>
 

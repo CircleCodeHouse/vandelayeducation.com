@@ -1,15 +1,11 @@
-/* main, body, nav{
-  max-width: 1800px;
-  display: flex;
-  justify-content: center;
-} */
-
 h1, h2, h3, h4, h5, .display-1, .display-2, .display-3, .display-4 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
 }
 
-p, span {
+p,
+span,
+li {
   font-family: 'EB Garamond', serif;
 }
 
@@ -203,9 +199,10 @@ p, span {
   background-size: cover;
   position: relative;
   background-image: linear-gradient(
-    rgba(75, 75, 75, 0.2),
-    rgba(45, 45, 45, 0.5)
-  ), url('/assets/img/Vandelay1119_Main.jpg');
+      rgba(75, 75, 75, 0.2),
+      rgba(45, 45, 45, 0.5)
+    ),
+    url('/assets/img/Vandelay1119_Main.jpg');
 }
 
 
@@ -224,7 +221,7 @@ p, span {
   width: 100%;
   top: -200px;
   background-color: #f2f2f2;
-  clip-path: polygon(0 100%, 100% , 100% 90%, 0 100%);
+  clip-path: polygon(0 100%, 100%, 100% 90%, 0 100%);
 }
 
 .slant-footer {
@@ -234,16 +231,17 @@ p, span {
   height: 10%;
   width: 100%;
   background-color: #e2e2e2;
-  clip-path: polygon(0 28%, 100% 56%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 21%, 100% 60%, 100% 100%, 0% 100%);
 }
 
-.footer-content{
+.footer-content {
   display: flex;
   justify-content: baseline;
+  padding-top: 150px;
 }
 
 .social-media{
-  padding-top: 150px;
+  padding-top: 75px;
 }
 
 .slant-careers {
@@ -284,18 +282,18 @@ div .big-bot-grils {
   padding-bottom: 200px;
 }
 
-.tall-rectagle {
-  height: 190px;
-  width: 175px;
+.tall-rectangle {
+  height: 250px;
+  width: 200px;
 }
 
 .big-square {
-  height: 210px;
-  width: 210px;
+  height: 300px;
+  width: 300px;
 }
 .smol-square {
-  height: 87px;
-  width: 87px;
+  height: 150px;
+  width: 150px;
 }
 
 div .card-height a{
@@ -307,6 +305,10 @@ div .card-height a{
   /* box-shadow: inset -3px 0px 8px -1px rgba(29, 29, 29, 0.3); */
 
 }
+footer ul:not(.links-vertical) {
+  line-height: 1.8;
+}
+
 @media screen and (max-width: 1090px) {
   .slant-box {
     height: 900px;
@@ -441,17 +443,13 @@ background-color: #e2e2e2;
 }
 
 
-@media (max-width: 768px){
-  .slant-footer, .slant-careers {
-    clip-path: none;
-  }
 
+@media (max-width: 768px) {
+  .slant-footer,
   .slant-careers {
     clip-path: none;
-
   }
-  
-  .border-right{
+  .border-right {
     border: rgba(46, 65, 150, 0.699);
   }
 }
@@ -472,9 +470,11 @@ background-color: #e2e2e2;
     width: 100%;
     top: -320px;
     background-color: #f2f2f2;
-    clip-path: polygon(0 100%, 100% , 100% 90%, 0 100%);
+    clip-path: polygon(0 100%, 100%, 100% 90%, 0 100%);
   }
 }
+
+
 .fifty-bg-dark {
   background-color: #e2e2e2;
 }

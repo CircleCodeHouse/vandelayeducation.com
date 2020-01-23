@@ -7,9 +7,9 @@ description: ''
 ---
 
 {% for _page in site.pages %}
-  {% if _page.settings %}
-    {% assign settings = _page %}
-  {% endif %}
+{% if _page.settings %}
+{% assign settings = _page %}
+{% endif %}
 {% endfor %}
 <div class="container-fluid bg-primary text-white pt-4 big-bot-grils">
     <div class="row justify-content-center">
@@ -18,9 +18,10 @@ description: ''
         </div>
     </div>
     <div class="pl-5 pr-5 row justify-content-center ">
-        <div class=" col-md-4 " >
+        <div class=" col-md-4 ">
             <div class="d-flex flex-column align-items-center justify-content-around">
-                <img src="/assets/img/Montain_Climbing_Icon_White.png" class="align-middle w-50 img-fluid" alt="Our Values Heart Logo">
+                <img src="/assets/img/Montain_Climbing_Icon_White.png" class="align-middle w-50 img-fluid"
+                    alt="Our Values Heart Logo">
                 <h3 class="text-center font-weight-bold m-0 text-close">Headquarters</h3>
                 <h5 class="text-center font-weight-bold m-0 pb-3 text-close">in Cedar Park, Texas</h5>
                 <p class="text-center">Out full-time team is dedicated to building a better future for education.</p>
@@ -29,11 +30,13 @@ description: ''
                 </div>
             </div>
         </div>
-        <div class=" col-md-4 " >
+        <div class=" col-md-4 ">
             <div class="d-flex flex-column align-items-center justify-content-around h-100">
-                <img src="/assets/img/Montain_Climbing_Icon_White.png" class="align-middle  w-50 img-fluid" alt="Our Values Heart Logo">
+                <img src="/assets/img/Montain_Climbing_Icon_White.png" class="align-middle  w-50 img-fluid"
+                    alt="Our Values Heart Logo">
                 <h3 class="text-center font-weight-bold m-0 text-close pb-3 ">Schools</h3>
-                <p class="text-center">Our devoted instructors and representatives are the boots on the ground that make our mission possible.</p>
+                <p class="text-center">Our devoted instructors and representatives are the boots on the ground that make
+                    our mission possible.</p>
                 <div class="bg-white text-primary rounded px-2">
                     Apply
                 </div>
@@ -44,43 +47,43 @@ description: ''
 
 
 <div class="container-fluid bg-white slant-careers  text-center">
-    <div class="row justify-content-center">
-        <div sm={12} md="auto" class=" m-2  p-0 align-self-center" >
-            <div class="tall-rectagle bg-secondary">
+    <div class="row justify-content-center mt-3">
+        <div sm={12} md="auto" class=" m-2 p-0 align-self-center">
+            <div class="tall-rectangle bg-secondary card rounded">
                 <!-- <img src="/assets/img/Coldbrew3.jpg" alt=""> -->
-                
             </div>
         </div>
-        <div sm={0} md="auto" class="mx-0 p-0" >
-            <div class="row justify-content-center mx-0 px-0" >
-                <div sm={12} md="auto" class="m-2 px-0">
-                    <div class="big-square bg-secondary">
+        <div sm={0} md="auto" class="mx-0 p-0">
+            <div class="row justify-content-center mx-0 px-0">
+                <div sm={6} md="auto" class="m-2 px-0">
+                    <div class="big-square bg-secondary card rounded mb-0">
                         <!-- <img src="/assets/img/BizDevCandid3_Edit.jpg" alt=""> -->
                     </div>
                 </div>
-                <div sm={12} md="auto" class="m-0 m-md-2 px-0 align-self-end ">
-                    <div class="smol-square bg-secondary d-none d-md-block">
-                        
+                <div sm={12} md="auto" class="m-0 m-md-2 px-0 align-self-end">
+                    <div class="smol-square bg-secondary card rounded d-none d-md-block mb-0">
+
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center mx-0 px-0 " >
+            <div class="row justify-content-center mx-0 px-0 ">
                 <div sm={12} md="auto" class="m-0 m-md-2 px-0">
-                    <div class="smol-square bg-secondary d-none d-md-block">
-                        
+                    <div class="smol-square bg-secondary card rounded d-none d-md-block">
+
                     </div>
                 </div>
                 <div sm={12} md="auto" class="m-2 px-0">
-                    <div class="big-square bg-secondary">
-                        
+                    <div class="big-square bg-secondary card rounded">
+
                     </div>
                 </div>
             </div>
         </div>
-        <div sm={12} md="auto" class="m-2 p-0 align-self-center" >
-            <div class="tall-rectagle bg-secondary">
-                
+        <div sm={12} md="auto" class="m-2 p-0 align-self-center">
+            <div class="tall-rectangle bg-secondary card rounded">
+
             </div>
         </div>
     </div>
+
 </div>
