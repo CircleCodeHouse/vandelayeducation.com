@@ -1,3 +1,8 @@
+/* main, body, nav{
+  max-width: 1800px;
+  display: flex;
+  justify-content: center;
+} */
 
 h1, h2, h3, h4, h5, .display-1, .display-2, .display-3, .display-4 {
   font-family: 'Source Sans Pro', sans-serif;
@@ -237,6 +242,10 @@ p, span {
   justify-content: baseline;
 }
 
+.social-media{
+  padding-top: 150px;
+}
+
 .slant-careers {
   clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
   padding-top: 150px;
@@ -294,7 +303,9 @@ div .card-height a{
 }
 
 .small-shadow{
-  box-shadow: inset -3px 0px 8px -1px rgba(29, 29, 29, 0.3);
+  box-shadow: 3px 18px 84px -30px rgba(29, 29, 29, 0.2);
+  /* box-shadow: inset -3px 0px 8px -1px rgba(29, 29, 29, 0.3); */
+
 }
 @media screen and (max-width: 1090px) {
   .slant-box {
@@ -415,7 +426,10 @@ div .card-height a{
 }
 
 .card-height{
-  min-height: calc(50vw - 7.5px);
+  min-height: calc(25vw - 7.5px);
+  /* box-shadow: inset 10px 10px 23px -4px rgba(29, 29, 29, 0.2) ; */
+  box-shadow: inset -3px 0px 8px -1px rgba(29, 29, 29, 0.1);
+
 }
 
 .max-height{
