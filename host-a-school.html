@@ -118,12 +118,12 @@ amp_components:
 
 <!-- The tabbed content (two DIV elements, each with a unique id (dental, medical)) starts here -->
 <div id="dental"  class="contentbox show" [class]="theTabs[currentTab].dental">
-  <amp-iframe sandbox="allow-scripts allow-same-origin" layout="responsive" frameborder="0" src="https://www.youtube.com/embed/VugSPLUVRPU" width="520" height="500" allowfullscreen><amp-img src="https://static.wixstatic.com/media/d053d3_70fa1c452b474205b211644150340695~mv2.png/v1/fill/w_1534,h_164,al_c,q_85,usm_0.66_1.00_0.01/d053d3_70fa1c452b474205b211644150340695~mv2.webp" width="700" height="200" placeholder></amp-img></amp-iframe>
+  <amp-iframe sandbox="allow-scripts allow-same-origin" layout="responsive" frameborder="0" src="https://www.youtube.com/embed/VugSPLUVRPU" width="520" height="500" allowfullscreen><amp-img src="https://static.wixstatic.com/media/d053d3_70fa1c452b474205b211644150340695~mv2.png/v1/fill/w_1534,h_164,al_c,q_85,usm_0.66_1.00_0.01/d053d3_70fa1c452b474205b211644150340695~mv2.webp" class="img-fluid" width="auto" height="200" placeholder></amp-img></amp-iframe>
   </div>
 
   <div id="medical" class="contentbox hide" [class]="theTabs[currentTab].medical">
   <!-- The placeholder image is required in order to put the iframe this close to the top of the page -->
-    <amp-iframe sandbox="allow-scripts allow-same-origin" layout="responsive" frameborder="0" src="https://www.youtube.com/embed/VugSPLUVRPU" width="496" height="500" allowfullscreen><amp-img src="https://static.wixstatic.com/media/d053d3_70fa1c452b474205b211644150340695~mv2.png/v1/fill/w_1534,h_164,al_c,q_85,usm_0.66_1.00_0.01/d053d3_70fa1c452b474205b211644150340695~mv2.webp" width="700" height="200" placeholder></amp-img></amp-iframe>
+    <amp-iframe sandbox="allow-scripts allow-same-origin" layout="responsive" frameborder="0" src="https://www.youtube.com/embed/VugSPLUVRPU" width="496" height="500" allowfullscreen><amp-img src="https://static.wixstatic.com/media/d053d3_70fa1c452b474205b211644150340695~mv2.png/v1/fill/w_1534,h_164,al_c,q_85,usm_0.66_1.00_0.01/d053d3_70fa1c452b474205b211644150340695~mv2.webp" class="img-fluid" width="auto" height="200" placeholder></amp-img></amp-iframe>
   </div>
 
 <!-- These are the tabs the user clicks to view content in the different tabs. This features uses AMP-bind -->
@@ -137,8 +137,6 @@ amp_components:
 </div>
 
 </div> 
-
-
 
 
 
