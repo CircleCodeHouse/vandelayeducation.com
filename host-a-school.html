@@ -22,10 +22,10 @@ amp_components:
            
   #goTabs {
     width: 100%;
-  height: 38px;
-  box-sizing: border-box;
-  font-size: 22px;
-  line-height: 26px;
+    height: 38px;
+    box-sizing: border-box;
+    font-size: 22px;
+    line-height: 26px;
     margin: 0px;    
     color: #fff;
     justify-content: center;
@@ -33,20 +33,21 @@ amp_components:
   }
   
 
-  #goTabs button{
+  #goTabs button {
 
-   width: 100%;
-  padding: 5px 15px;
-  border: 0;
-  color:#fff;
-  font-size: 18px;
-  line-height: 26px;
+    width: 100%;
+    padding: 5px 20px;
+
+    color:#fff;
+    font-size: 18px;
+    line-height: 26px;
     margin:0;
-     cursor: pointer;
+    cursor: pointer;
+    border: 1px solid #fff;
   }
 
   #goTabs button.active, #goTabs button:hover {
-  background-color: rgb(35,53,110);
+    background-color: rgb(35,53,110);
   }
 
   #goTabs button.inactive {
@@ -55,26 +56,26 @@ amp_components:
 
   }
 
-  #dental{
+  #dental {
     width:100%;
     height:470px;
-  box-sizing:border-box;
+    box-sizing:border-box;
 
   }
   #dental iframe {
-      min-height: 470px;
-      position: relative;
+    min-height: 470px;
+    position: relative;
     
     }
 
   #medical {
     width: 100%;
     height: 470px;
-  box-sizing:border-box;
+    box-sizing:border-box;
   }
-    #medical iframe {
-      min-height: 470px;
-      position: relative;
+  #medical iframe {
+    min-height: 470px;
+    position: relative;
     
     }
   
@@ -95,13 +96,13 @@ amp_components:
       "dental": {
         "dentalTab": "active",
         "medicalTab": "inactive",
-    "dental": "show",
+        "dental": "show",
         "medical": "hide"
       },
       "medical": {
         "dentalTab": "inactive",
         "medicalTab": "active",
-    "dental": "hide",
+        "dental": "hide",
         "medical": "show"
       }
     }
@@ -115,6 +116,16 @@ amp_components:
       <div class="col-sm-12 col-md-8 p-0">
         <div class="bg-white">
 
+<!-- The tabbed content (two DIV elements, each with a unique id (dental, medical)) starts here -->
+<div id="dental"  class="contentbox show" [class]="theTabs[currentTab].dental">
+  <amp-iframe sandbox="allow-scripts allow-same-origin" layout="responsive" frameborder="0" src="https://www.youtube.com/embed/VugSPLUVRPU" width="520" height="500" allowfullscreen><amp-img src="https://static.wixstatic.com/media/d053d3_70fa1c452b474205b211644150340695~mv2.png/v1/fill/w_1534,h_164,al_c,q_85,usm_0.66_1.00_0.01/d053d3_70fa1c452b474205b211644150340695~mv2.webp" width="700" height="200" placeholder></amp-img></amp-iframe>
+  </div>
+
+  <div id="medical" class="contentbox hide" [class]="theTabs[currentTab].medical">
+  <!-- The placeholder image is required in order to put the iframe this close to the top of the page -->
+    <amp-iframe sandbox="allow-scripts allow-same-origin" layout="responsive" frameborder="0" src="https://www.youtube.com/embed/VugSPLUVRPU" width="496" height="500" allowfullscreen><amp-img src="https://static.wixstatic.com/media/d053d3_70fa1c452b474205b211644150340695~mv2.png/v1/fill/w_1534,h_164,al_c,q_85,usm_0.66_1.00_0.01/d053d3_70fa1c452b474205b211644150340695~mv2.webp" width="700" height="200" placeholder></amp-img></amp-iframe>
+  </div>
+
 <!-- These are the tabs the user clicks to view content in the different tabs. This features uses AMP-bind -->
 <div class="row justify-content-between" id="goTabs">
   <div class="col-6 p-0">
@@ -125,15 +136,6 @@ amp_components:
   </div>
 </div>
 
-<!-- The tabbed content (two DIV elements, each with a unique id (dental, medical)) starts here -->
-<div id="dental"  class="contentbox show" [class]="theTabs[currentTab].dental">
-  <amp-iframe sandbox="allow-scripts allow-same-origin" layout="responsive" frameborder="0" src="https://www.youtube.com/embed/VugSPLUVRPU" width="520" height="500" allowfullscreen><amp-img src="https://static.wixstatic.com/media/d053d3_70fa1c452b474205b211644150340695~mv2.png/v1/fill/w_1534,h_164,al_c,q_85,usm_0.66_1.00_0.01/d053d3_70fa1c452b474205b211644150340695~mv2.webp" width="700" height="200" placeholder></amp-img></amp-iframe>
-  </div>
-
-  <div id="medical" class="contentbox hide" [class]="theTabs[currentTab].medical">
-  <!-- The placeholder image is required in order to put the iframe this close to the top of the page -->
-    <amp-iframe sandbox="allow-scripts allow-same-origin" layout="responsive" frameborder="0" src="https://www.youtube.com/embed/VugSPLUVRPU" width="496" height="500" allowfullscreen><amp-img src="https://static.wixstatic.com/media/d053d3_70fa1c452b474205b211644150340695~mv2.png/v1/fill/w_1534,h_164,al_c,q_85,usm_0.66_1.00_0.01/d053d3_70fa1c452b474205b211644150340695~mv2.webp" width="700" height="200" placeholder></amp-img></amp-iframe>
-  </div>
 </div> 
 
 
