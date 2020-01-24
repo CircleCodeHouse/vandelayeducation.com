@@ -55,8 +55,7 @@ li {
 .top-row-our-values {
   margin-top: 140px;
 }
-@media screen and (max-width: 990px) {
-}
+
 
 .card-our-values {
   background-color: #23356e;
@@ -250,6 +249,15 @@ li {
   padding-bottom: 150px;
   margin-top: -150px;
   margin-bottom: -150px;
+}
+
+@media screen and (max-width: 990px) {
+  .slant-careers {
+    margin-top: -150px;
+    padding-top: 300px;
+    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
+
+  }
 }
 
 .slant-campuses{
