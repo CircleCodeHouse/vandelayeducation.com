@@ -498,11 +498,14 @@ background-color: #e2e2e2;
   background-color: #e2e2e2;
 }
 
+/* host a school page */
+
+
 .slant-spacer {
   position: relative;
-  top: -5vh;
+  top: -10vh;
   text-align: center;
-  height: 20vh;
+  height: 40vh;
   width: 100%;
   background-color: #e2e2e2;
   clip-path: polygon(0 21%, 100% 0%, 100% 79%, 0% 100%);
