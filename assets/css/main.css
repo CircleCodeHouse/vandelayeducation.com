@@ -243,6 +243,10 @@ li {
   padding-top: 75px;
 }
 
+div.max-height a p:hover{
+  font-weight:bold;
+}
+
 .slant-careers {
   clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
   padding-top: 150px;
