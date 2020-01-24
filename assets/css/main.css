@@ -245,6 +245,11 @@ li {
 
 div.max-height a p:hover{
   font-weight:bold;
+  color: #23356e;
+}
+
+a:hover{
+  text-decoration: none;
 }
 
 .slant-careers {
@@ -275,20 +280,22 @@ div .big-bot-grils {
 }
 
 .tall-rectagle {
-  height: 190px;
-  width: 175px;
+  height: 250px;
+  width: 200px;
 }
 
 .big-square {
-  height: 210px;
-  width: 210px;
+  height: 300px;
+  width: 300px;
 }
 .smol-square {
-  height: 87px;
-  width: 87px;
+  height: 150px;
+  width: 150px;
 }
 
-
+amp-img.contain img {
+  object-fit: cover;
+}
 
 div .big-bot-grils {
   padding-bottom: 200px;
