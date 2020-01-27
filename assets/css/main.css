@@ -445,6 +445,10 @@ footer ul:not(.links-vertical) {
   color: rgba(var(--brand-primary-dark), 1) !important;
 }
 
+.btn-primary {
+  background-color: rgba(var(--brand-primary-dark), 1) !important;
+}
+
 .min-height-hack{
   min-height: 100px;
 }
@@ -501,25 +505,53 @@ background-color: #e2e2e2;
   background-color: #e2e2e2;
 }
 
+@media only screen and (max-width: 767px) {
+  .fifty-bg-dark {
+    border-bottom: 1px solid rgba(var(--brand-primary-dark), 1);
+    background-color: #fff;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .fifty-bg-light {
+    border-bottom: 1px solid rgba(var(--brand-primary-dark), 1);
+  }
+}
+
+
+
 /* host a school page */
 
 
 .slant-spacer {
   position: relative;
-  top: 5vh;
+  top: -14vh;
   text-align: center;
-  height: 30vh;
+  height: 44vh;
   width: 100%;
   background-color: #e2e2e2;
   clip-path: polygon(0 21%, 100% 0%, 100% 79%, 0% 100%);
+}
+
+@media only screen and (max-width: 767px) {
+  .slant-spacer {
+    height: 55vh;
+  }
 }
 
 .slant-how-it-works {
   position: relative;
   top: -5vh;
   text-align: center;
-  height: 40vh;
+  height: 44vh;
   width: 100%;
   background-color: rgba(var(--brand-primary-dark), 1);
   clip-path: polygon(0 0, 100% 21%, 100% 100%, 0 79%);
+}
+
+@media only screen and (max-width: 767px) {
+  .slant-how-it-works {
+    height: 58vh;
+    margin-top: 20vh;
+  }
 }
