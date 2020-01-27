@@ -204,13 +204,16 @@ li {
     url('/assets/img/Vandelay1119_Main.jpg');
 }
 
-
+/* .mtt-title {
+  margin-top: -150px;
+} */
 
 .mtt-title h2 {
   text-align: center;
   color: blue;
   font-weight: 900;
   font-size: 5em;
+
 }
 
 .slant-box {
@@ -503,9 +506,9 @@ background-color: #e2e2e2;
 
 .slant-spacer {
   position: relative;
-  top: -10vh;
+  top: 5vh;
   text-align: center;
-  height: 40vh;
+  height: 30vh;
   width: 100%;
   background-color: #e2e2e2;
   clip-path: polygon(0 21%, 100% 0%, 100% 79%, 0% 100%);
